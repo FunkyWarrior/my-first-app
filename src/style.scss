@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Myriad', sans-serif;
+}
+.shadow-box {
+    top:0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 4;
+}
+//--------------------------------------------------------------------------------------------------------------------
+.header {
+    background-color: #70d1d2;
+    height: 100px;
+    &__inner{
+        margin: 0 15%;
+        height: 100%;
+        display: flex;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__inner-right{
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: red;
+        transition: all 0.2s;
+        margin-left: 20px;
+        white-space: nowrap;
+        font-size: 22px;
+    }
+
+    &__link:hover{
+        filter:invert(100%)
+    }
+}
+
+//--------------------------------------------------------------------------------------------------------------------
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: lightgrey;
+    margin: 0 15%;
+
+    &__inner {
+        display:flex;
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 10px -5px 10px rgba(0, 0, 0, 0.5);
+    }
+    &__content {
+
+        width: 15%;
+        display:flex;
+        margin: 20px 0px;
+        text-align: center;
+        flex-direction: column;
+        height: 300px;
+        min-width: 250px;
+        min-height: 400px;
+        background-color: grey;
+        border-radius: 10px;
+
+    }
+    &__content-open {
+        position: fixed;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 700px;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        margin: -350px -200px;
+        background-color: grey;
+        z-index: 5;
+        border-radius: 10px;
+    }
+    &__img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        top: 0;
+        height: 50%;
+        width: 100%;
+    }
+
+    &__short {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__short:hover {
+        white-space: normal;
+        text-overflow: ellipsis;
+        cursor: default;
+    }
+    &__buttons {
+        display: flex;
+    }
+    &__buttons>* {
+        width: 50%;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        transition: all 0.5s;
+    }
+    &__buttons>*:hover {
+        filter:invert(100%)
+    }
+    &__info {
+        border-bottom-left-radius: 10px;
+    }
+    &__add-cart {
+        border-bottom-right-radius: 10px;
+    }
+}
+//--------------------------------------------------------------------------------------------------------------------
+
+.logIn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    z-index: 5;
+    background-color: darkkhaki;
+    margin: -100px -150px;
+    border-radius: 10px;
+
+    &__title{
+        background-color: red;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    &__form>*{
+        margin-top: 10px;
+    }
+    &__submit {
+        margin-top: 30px;
+    }
+}
+
+//--------------------------------------------------------------------------------------------------------------------
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 500px;
+    z-index: 5;
+    background-color: darkkhaki;
+    margin: -250px -150px;
+    border-radius: 10px;
+    &__title{
+        background-color: red;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    &__form>*{
+        margin-top: 10px;
+    }
+    &__submit {
+        margin-top: 40px;
+    }
+}
+
+//--------------------------------------------------------------------------------------------------------------------
+.cart {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    height: 600px;
+    max-height: 600px;
+    width: 14%;
+    background-color: darksalmon;
+    margin-top: -300px;
+    overflow: hidden;
+    opacity: 0.5;
+    transition: all 0.5s;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+
+    &__inner {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-top: 5px;
+    }
+
+    &__img {
+        height: 100%;
+        width: 30%;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__buttons>*{
+        height: 33.3%;
+        width: 30px;
+    }
+    &__sum {
+        position: fixed;
+        width: 14%;
+        text-align: center;
+        transition: width 0.5s;
+        padding-top: 5px;
+        height: 30px;
+        background-color: red;
+
+    }
+    &__buy {
+        position: fixed;
+        top: 50%;
+        right: 0%;
+        width: 14%;
+        margin-top: 260px;
+        height: 40px;
+        transition: width 0.5s;
+    }
+}
+
+.cart:hover {
+    .cart__sum{
+        width: 30%;
+    }
+    .cart__buy {
+        width: 30%;
+    }
+    overflow-y: auto;
+    opacity: 1;
+    width: 30%;
+}
+

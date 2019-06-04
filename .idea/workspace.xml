@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f0805a5-c7c5-43de-b917-2e4426b5576d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://C:/SnS/SnS/public/src/modules/user-login-form.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="261">
+                    <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/components/Reg.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="136">
+                    <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="135" column="245" lean-forward="true" selection-start-line="135" selection-start-column="245" selection-end-line="135" selection-end-column="245" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/LogIn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/SnS/SnS/public/src/modules/user-registration-form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="84" column="98" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="98" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/SnS/SnS/public/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Cart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="211" column="21" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/CartItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img</find>
+      <find>showLogReg</find>
+      <find>data</find>
+      <find>console</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main.scss" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/components/Footer.js" />
+        <option value="$PROJECT_DIR$/src/components/LogInForm.js" />
+        <option value="$PROJECT_DIR$/src/components/RegisterForm.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/LogIn.js" />
+        <option value="$PROJECT_DIR$/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/ShadowBox.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation.js" />
+        <option value="$PROJECT_DIR$/src/components/MainContent.js" />
+        <option value="$PROJECT_DIR$/src/components/Service.js" />
+        <option value="$PROJECT_DIR$/public/img/package.json" />
+        <option value="$PROJECT_DIR$/public/db.json" />
+        <option value="$PROJECT_DIR$/public/users.json" />
+        <option value="$PROJECT_DIR$/public/orders.json" />
+        <option value="$PROJECT_DIR$/src/components/CartItem.js" />
+        <option value="$PROJECT_DIR$/src/components/Cart.js" />
+        <option value="$PROJECT_DIR$/db.json" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/Reg.js" />
+        <option value="$PROJECT_DIR$/src/style.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/my-app.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="12" />
+    <option name="width" value="3435" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/SnS/SnS/public/src/modules/user-registration-form.js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\React\my-app" />
+      <recent name="C:\React\my-app\src\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Service.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Service.js" working-dir="$PROJECT_DIR$/src/components">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.Service.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f0805a5-c7c5-43de-b917-2e4426b5576d" name="Default Changelist" comment="" />
+      <created>1559093941739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559093941739</updated>
+      <workItem from="1559093942843" duration="24180000" />
+      <workItem from="1559254582495" duration="10116000" />
+      <workItem from="1559488148521" duration="619000" />
+      <workItem from="1559542456260" duration="35198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="70113000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09535067" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.16251354" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09535067" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.16251354" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/manifest.json" />
+    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.css" />
+    <entry file="file://$PROJECT_DIR$/src/index.css" />
+    <entry file="file://$PROJECT_DIR$/src/logo.svg" />
+    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4488" />
+      </provider>
+    </entry>
+    <entry file="file://C:/SnS/SnS/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="4" lean-forward="true" selection-end-line="343" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/history/createBrowserHistory.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/React/my-app">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/src/App.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.js#Footer#128;C:/React/my-app/src/App.js#Header#36;C:/React/my-app/src/App.js#MainContent#77;C:/React/my-app/src/App.js#React#7;C:/React/my-app/src/App.js#ShadowBox#169;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/src/App.test.tsx#App#68;C:/React/my-app/node_modules/react-scripts/template-typescript/src/App.test.tsx#React#7;C:/React/my-app/node_modules/react-scripts/template-typescript/src/App.test.tsx#ReactDOM#34;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/src/App.tsx#App.css#58;C:/React/my-app/node_modules/react-scripts/template-typescript/src/App.tsx#React#7;C:/React/my-app/node_modules/react-scripts/template-typescript/src/App.tsx#logo#34;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/BrowserRouter.js#BrowserRouter#92;C:/React/my-app/node_modules/react-router-dom/BrowserRouter.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/BrowserRouter.js#BrowserRouter#150;C:/React/my-app/node_modules/react-router-dom/es/BrowserRouter.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/DOMUtils.js#DOMUtils#90;C:/React/my-app/node_modules/history/DOMUtils.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/DOMUtils.js#DOMUtils#145;C:/React/my-app/node_modules/history/es/DOMUtils.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/ExecutionEnvironment.js#ExecutionEnvironment#102;C:/React/my-app/node_modules/history/ExecutionEnvironment.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/ExecutionEnvironment.js#ExecutionEnvironment#157;C:/React/my-app/node_modules/history/es/ExecutionEnvironment.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Footer.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/HashRouter.js#HashRouter#89;C:/React/my-app/node_modules/react-router-dom/HashRouter.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/HashRouter.js#HashRouter#147;C:/React/my-app/node_modules/react-router-dom/es/HashRouter.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Header.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/Link.js#Link#83;C:/React/my-app/node_modules/react-router-dom/Link.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/Link.js#Link#141;C:/React/my-app/node_modules/react-router-dom/es/Link.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/LocationUtils.js#LocationUtils#95;C:/React/my-app/node_modules/history/LocationUtils.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/LocationUtils.js#LocationUtils#150;C:/React/my-app/node_modules/history/es/LocationUtils.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/MainContent.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/MemoryRouter.js#MemoryRouter#91;C:/React/my-app/node_modules/react-router/MemoryRouter.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/MemoryRouter.js#MemoryRouter#91;C:/React/my-app/node_modules/react-router-dom/MemoryRouter.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/MemoryRouter.js#MemoryRouter#149;C:/React/my-app/node_modules/react-router-dom/es/MemoryRouter.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/MemoryRouter.js#MemoryRouter#149;C:/React/my-app/node_modules/react-router/es/MemoryRouter.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/NavLink.js#NavLink#86;C:/React/my-app/node_modules/react-router-dom/NavLink.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/NavLink.js#NavLink#144;C:/React/my-app/node_modules/react-router-dom/es/NavLink.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/PathUtils.js#PathUtils#91;C:/React/my-app/node_modules/history/PathUtils.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/PathUtils.js#PathUtils#146;C:/React/my-app/node_modules/history/es/PathUtils.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/Prompt.js#Prompt#85;C:/React/my-app/node_modules/react-router/Prompt.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/Prompt.js#Prompt#85;C:/React/my-app/node_modules/react-router-dom/Prompt.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/Prompt.js#Prompt#143;C:/React/my-app/node_modules/react-router-dom/es/Prompt.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/Prompt.js#Prompt#143;C:/React/my-app/node_modules/react-router/es/Prompt.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/Redirect.js#Redirect#87;C:/React/my-app/node_modules/react-router/Redirect.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/Redirect.js#Redirect#87;C:/React/my-app/node_modules/react-router-dom/Redirect.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/Redirect.js#Redirect#145;C:/React/my-app/node_modules/react-router-dom/es/Redirect.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/Redirect.js#Redirect#145;C:/React/my-app/node_modules/react-router/es/Redirect.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/Route.js#Route#84;C:/React/my-app/node_modules/react-router/Route.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/Route.js#Route#84;C:/React/my-app/node_modules/react-router-dom/Route.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/Route.js#Route#142;C:/React/my-app/node_modules/react-router-dom/es/Route.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/Route.js#Route#142;C:/React/my-app/node_modules/react-router/es/Route.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/Router.js#Router#85;C:/React/my-app/node_modules/react-router/Router.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/Router.js#Router#85;C:/React/my-app/node_modules/react-router-dom/Router.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/Router.js#Router#143;C:/React/my-app/node_modules/react-router-dom/es/Router.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/Router.js#Router#143;C:/React/my-app/node_modules/react-router/es/Router.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/ShadowBox.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/StaticRouter.js#StaticRouter#91;C:/React/my-app/node_modules/react-router/StaticRouter.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/StaticRouter.js#StaticRouter#91;C:/React/my-app/node_modules/react-router-dom/StaticRouter.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/StaticRouter.js#StaticRouter#149;C:/React/my-app/node_modules/react-router-dom/es/StaticRouter.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/StaticRouter.js#StaticRouter#149;C:/React/my-app/node_modules/react-router/es/StaticRouter.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/Switch.js#Switch#85;C:/React/my-app/node_modules/react-router/Switch.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/Switch.js#Switch#85;C:/React/my-app/node_modules/react-router-dom/Switch.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/Switch.js#Switch#143;C:/React/my-app/node_modules/react-router-dom/es/Switch.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/Switch.js#Switch#143;C:/React/my-app/node_modules/react-router/es/Switch.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/lodash/assign.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/async_hooks.d.ts#AsyncResource#3424;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@babel/parser/typings/babel-parser.d.ts#ParserOptions#666;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/lib/binding.js#errors#42;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/scripts/build.js#fs#44;C:/React/my-app/node_modules/node-sass/scripts/build.js#mkdir#66;C:/React/my-app/node_modules/node-sass/scripts/build.js#path#95;C:/React/my-app/node_modules/node-sass/scripts/build.js#renderSync#3021;C:/React/my-app/node_modules/node-sass/scripts/build.js#sass#155;C:/React/my-app/node_modules/node-sass/scripts/build.js#spawn#121;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/prop-types/checkPropTypes.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/child_process.d.ts#Pipe#144;C:/React/my-app/node_modules/@types/node/child_process.d.ts#Readable#126;C:/React/my-app/node_modules/@types/node/child_process.d.ts#Stream#136;C:/React/my-app/node_modules/@types/node/child_process.d.ts#Writable#116;C:/React/my-app/node_modules/@types/node/child_process.d.ts#events#44;C:/React/my-app/node_modules/@types/node/child_process.d.ts#net#82;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/lodash/cloneDeep.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/cluster.d.ts#child#38;C:/React/my-app/node_modules/@types/node/cluster.d.ts#events#82;C:/React/my-app/node_modules/@types/node/cluster.d.ts#net#120;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/scripts/coverage.js#Mocha#47;C:/React/my-app/node_modules/node-sass/scripts/coverage.js#coveralls#153;C:/React/my-app/node_modules/node-sass/scripts/coverage.js#fs#75;C:/React/my-app/node_modules/node-sass/scripts/coverage.js#istanbul#189;C:/React/my-app/node_modules/node-sass/scripts/coverage.js#mkdirp#123;C:/React/my-app/node_modules/node-sass/scripts/coverage.js#path#97;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createBrowserHistory.js#createBrowserHistory#102;C:/React/my-app/node_modules/history/createBrowserHistory.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/createBrowserHistory.js#createBrowserHistory#157;C:/React/my-app/node_modules/history/es/createBrowserHistory.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createHashHistory.js#createHashHistory#99;C:/React/my-app/node_modules/history/createHashHistory.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/createHashHistory.js#createHashHistory#154;C:/React/my-app/node_modules/history/es/createHashHistory.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createMemoryHistory.js#createMemoryHistory#101;C:/React/my-app/node_modules/history/createMemoryHistory.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/createMemoryHistory.js#createMemoryHistory#156;C:/React/my-app/node_modules/history/es/createMemoryHistory.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createTransitionManager.js#createTransitionManager#105;C:/React/my-app/node_modules/history/createTransitionManager.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/createTransitionManager.js#createTransitionManager#160;C:/React/my-app/node_modules/history/es/createTransitionManager.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/crypto.d.ts#stream#37;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/dgram.d.ts#AddressInfo#38;C:/React/my-app/node_modules/@types/node/dgram.d.ts#dns#75;C:/React/my-app/node_modules/@types/node/dgram.d.ts#events#107;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/dns.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/domain.d.ts#events#37;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/scripts/util/downloadoptions.js#proxy#4;C:/React/my-app/node_modules/node-sass/scripts/util/downloadoptions.js#userAgent#34;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/lib/errors.js#pkg#75;C:/React/my-app/node_modules/node-sass/lib/errors.js#sass#41;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/events.d.ts#EventEmitter#198;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@babel/runtime/helpers/esm/extends.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/lib/extensions.js#eol#51;C:/React/my-app/node_modules/node-sass/lib/extensions.js#fs#72;C:/React/my-app/node_modules/node-sass/lib/extensions.js#mkdir#130;C:/React/my-app/node_modules/node-sass/lib/extensions.js#path#159;C:/React/my-app/node_modules/node-sass/lib/extensions.js#pkg#94;C:/React/my-app/node_modules/node-sass/lib/extensions.js#trueCasePathSync#244;</node>
+            <node x="" y="">forEach;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/fs.d.ts#URL#111;C:/React/my-app/node_modules/@types/node/fs.d.ts#events#71;C:/React/my-app/node_modules/@types/node/fs.d.ts#stream#33;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/gaze/lib/gaze.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/generatePath.js#generatePath#91;C:/React/my-app/node_modules/react-router/generatePath.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/generatePath.js#generatePath#91;C:/React/my-app/node_modules/react-router-dom/generatePath.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/generatePath.js#generatePath#149;C:/React/my-app/node_modules/react-router-dom/es/generatePath.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/generatePath.js#generatePath#149;C:/React/my-app/node_modules/react-router/es/generatePath.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/glob/glob.js</node>
+            <node x="" y="">DOMUtils;ExecutionEnvironment;LocationUtils;PathUtils;C:/React/my-app/node_modules/history/esm/history.js#_extends#7;C:/React/my-app/node_modules/history/esm/history.js#createBrowserHistory#7334;C:/React/my-app/node_modules/history/esm/history.js#createHashHistory#16230;C:/React/my-app/node_modules/history/esm/history.js#createLocation#1621;C:/React/my-app/node_modules/history/esm/history.js#createMemoryHistory#23927;C:/React/my-app/node_modules/history/esm/history.js#createPath#1275;C:/React/my-app/node_modules/history/esm/history.js#createTransitionManager#3389;C:/React/my-app/node_modules/history/esm/history.js#invariant#188;C:/React/my-app/node_modules/history/esm/history.js#locationsAreEqual#3218;C:/React/my-app/node_modules/history/esm/history.js#resolvePathname#66;C:/React/my-app/node_modules/history/esm/history.js#valueEqual#114;C:/React/my-app/node_modules/history/esm/history.js#warning#152;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/cjs/history.js#invariant#381;C:/React/my-app/node_modules/history/cjs/history.js#resolvePathname#199;C:/React/my-app/node_modules/history/cjs/history.js#valueEqual#267;C:/React/my-app/node_modules/history/cjs/history.js#warning#325;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/cjs/history.min.js#invariant#296;C:/React/my-app/node_modules/history/cjs/history.min.js#resolvePathname#156;C:/React/my-app/node_modules/history/cjs/history.min.js#tiny-warning.esm.js#268;C:/React/my-app/node_modules/history/cjs/history.min.js#valueEqual#217;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/http.d.ts#IncomingHttpHeaders#241;C:/React/my-app/node_modules/@types/node/http.d.ts#IncomingMessage#6312;C:/React/my-app/node_modules/@types/node/http.d.ts#NetServer#152;C:/React/my-app/node_modules/@types/node/http.d.ts#OutgoingHttpHeaders#2238;C:/React/my-app/node_modules/@types/node/http.d.ts#ServerResponse#5102;C:/React/my-app/node_modules/@types/node/http.d.ts#Socket#144;C:/React/my-app/node_modules/@types/node/http.d.ts#URL#113;C:/React/my-app/node_modules/@types/node/http.d.ts#events#35;C:/React/my-app/node_modules/@types/node/http.d.ts#stream#73;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/http2.d.ts#Http1IncomingHttpHeaders#241;C:/React/my-app/node_modules/@types/node/http2.d.ts#IncomingMessage#311;C:/React/my-app/node_modules/@types/node/http2.d.ts#OutgoingHttpHeaders#290;C:/React/my-app/node_modules/@types/node/http2.d.ts#ServerResponse#328;C:/React/my-app/node_modules/@types/node/http2.d.ts#events#36;C:/React/my-app/node_modules/@types/node/http2.d.ts#fs#74;C:/React/my-app/node_modules/@types/node/http2.d.ts#net#104;C:/React/my-app/node_modules/@types/node/http2.d.ts#stream#136;C:/React/my-app/node_modules/@types/node/http2.d.ts#tls#174;C:/React/my-app/node_modules/@types/node/http2.d.ts#url#206;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/https.d.ts#URL#142;C:/React/my-app/node_modules/@types/node/https.d.ts#events#68;C:/React/my-app/node_modules/@types/node/https.d.ts#http#106;C:/React/my-app/node_modules/@types/node/https.d.ts#tls#36;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/src/index.css</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/node_modules/path-to-regexp/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/istanbul-lib-coverage/index.d.ts#CoverageMap#859;C:/React/my-app/node_modules/@types/istanbul-lib-coverage/index.d.ts#CoverageSummary#476;C:/React/my-app/node_modules/@types/istanbul-lib-coverage/index.d.ts#FileCoverage#2069;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/istanbul-lib-report/index.d.ts#Context#766;C:/React/my-app/node_modules/@types/istanbul-lib-report/index.d.ts#CoverageMap#295;C:/React/my-app/node_modules/@types/istanbul-lib-report/index.d.ts#CoverageSummary#322;C:/React/my-app/node_modules/@types/istanbul-lib-report/index.d.ts#FileCoverage#308;C:/React/my-app/node_modules/@types/istanbul-lib-report/index.d.ts#FileWriter#1006;C:/React/my-app/node_modules/@types/istanbul-lib-report/index.d.ts#Node#1293;C:/React/my-app/node_modules/@types/istanbul-lib-report/index.d.ts#Visitor#1867;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@babel/types/lib/index.d.ts#Expression#43393;C:/React/my-app/node_modules/@babel/types/lib/index.d.ts#File#8165;C:/React/my-app/node_modules/@babel/types/lib/index.d.ts#Program#11106;C:/React/my-app/node_modules/@babel/types/lib/index.d.ts#Statement#44916;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/istanbul-reports/index.d.ts#Context#292;C:/React/my-app/node_modules/@types/istanbul-reports/index.d.ts#CoverageSummary#366;C:/React/my-app/node_modules/@types/istanbul-reports/index.d.ts#FileWriter#307;C:/React/my-app/node_modules/@types/istanbul-reports/index.d.ts#Node#301;C:/React/my-app/node_modules/@types/istanbul-reports/index.d.ts#Visitor#319;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/babel__generator/index.d.ts#GeneratorOptions#475;C:/React/my-app/node_modules/@types/babel__generator/index.d.ts#t#446;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/babel__traverse/index.d.ts#NodePath#5087;C:/React/my-app/node_modules/@types/babel__traverse/index.d.ts#Visitor#4603;C:/React/my-app/node_modules/@types/babel__traverse/index.d.ts#t#512;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/babel__template/index.d.ts#Expression#499;C:/React/my-app/node_modules/@types/babel__template/index.d.ts#File#511;C:/React/my-app/node_modules/@types/babel__template/index.d.ts#ParserOptions#452;C:/React/my-app/node_modules/@types/babel__template/index.d.ts#Program#517;C:/React/my-app/node_modules/@types/babel__template/index.d.ts#Statement#526;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/vfile-message/index.d.ts#Unist#296;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/babel__core/index.d.ts#GeneratorOptions#509;C:/React/my-app/node_modules/@types/babel__core/index.d.ts#NodePath#581;C:/React/my-app/node_modules/@types/babel__core/index.d.ts#ParserOptions#700;C:/React/my-app/node_modules/@types/babel__core/index.d.ts#Visitor#572;C:/React/my-app/node_modules/@types/babel__core/index.d.ts#t#663;C:/React/my-app/node_modules/@types/babel__core/index.d.ts#template#623;C:/React/my-app/node_modules/@types/babel__core/index.d.ts#traverse#560;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/yargs/index.d.ts#Argv#2001;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/vfile/index.d.ts#Unist#331;C:/React/my-app/node_modules/@types/vfile/index.d.ts#vfileMessage#363;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/unist/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/tiny-invariant/src/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/create-react-context/lib/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/public/index.html</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template/public/index.html</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/node_modules/chalk/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/node_modules/cross-spawn/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/prop-types/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mkdirp/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/cjs/react-router.js#MemoryRouter#22743;C:/React/my-app/node_modules/react-router/cjs/react-router.js#Prompt#22780;C:/React/my-app/node_modules/react-router/cjs/react-router.js#Redirect#22805;C:/React/my-app/node_modules/react-router/cjs/react-router.js#Route#22834;C:/React/my-app/node_modules/react-router/cjs/react-router.js#Router#22857;C:/React/my-app/node_modules/react-router/cjs/react-router.js#StaticRouter#22882;C:/React/my-app/node_modules/react-router/cjs/react-router.js#Switch#22919;C:/React/my-app/node_modules/react-router/cjs/react-router.js#generatePath#22944;C:/React/my-app/node_modules/react-router/cjs/react-router.js#matchPath#22981;C:/React/my-app/node_modules/react-router/cjs/react-router.js#withRouter#23012;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/cjs/react-router-dom.js#BrowserRouter#8744;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#HashRouter#8783;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#Link#8816;MemoryRouter;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#NavLink#8837;Prompt;Redirect;Route;Router;StaticRouter;Switch;generatePath;matchPath;withRouter;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/scheduler/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/meow/index.js</node>
+            <node x="" y="">isValidElementType;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js#react.development.js#149;C:/React/my-app/node_modules/react/index.js#react.production.min.js#79;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/object-assign/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/lib/index.js#assign#109;C:/React/my-app/node_modules/node-sass/lib/index.js#binding#211;C:/React/my-app/node_modules/node-sass/lib/index.js#clonedeep#66;C:/React/my-app/node_modules/node-sass/lib/index.js#path#40;C:/React/my-app/node_modules/node-sass/lib/index.js#renderSync#7939;C:/React/my-app/node_modules/node-sass/lib/index.js#sass#146;</node>
+            <node x="" y="">DOMUtils;ExecutionEnvironment;LocationUtils;PathUtils;C:/React/my-app/node_modules/history/cjs/history.js#createBrowserHistory#28030;C:/React/my-app/node_modules/history/cjs/history.js#createHashHistory#28083;C:/React/my-app/node_modules/history/cjs/history.js#createMemoryHistory#28130;createTransitionManager;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/index.js#react-dom.development.js#1318;C:/React/my-app/node_modules/react-dom/index.js#react-dom.production.min.js#1244;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/get-stdin/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/request/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/value-equal/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/stdout-stream/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/true-case-path/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/resolve-pathname/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.js#App#68;C:/React/my-app/src/index.js#React#7;C:/React/my-app/src/index.js#ReactDOM#34;C:/React/my-app/src/index.js#serviceWorker#93;C:/React/my-app/src/index.js#style.scss#136;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/src/index.tsx#App#90;C:/React/my-app/node_modules/react-scripts/template-typescript/src/index.tsx#React#7;C:/React/my-app/node_modules/react-scripts/template-typescript/src/index.tsx#ReactDOM#34;C:/React/my-app/node_modules/react-scripts/template-typescript/src/index.tsx#index.css#61;C:/React/my-app/node_modules/react-scripts/template-typescript/src/index.tsx#serviceWorker#115;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/inspector.d.ts#EventEmitter#345;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/scripts/install.js#downloadOptions#248;C:/React/my-app/node_modules/node-sass/scripts/install.js#eol#74;C:/React/my-app/node_modules/node-sass/scripts/install.js#fs#46;C:/React/my-app/node_modules/node-sass/scripts/install.js#log#221;C:/React/my-app/node_modules/node-sass/scripts/install.js#mkdir#95;C:/React/my-app/node_modules/node-sass/scripts/install.js#path#124;C:/React/my-app/node_modules/node-sass/scripts/install.js#request#189;C:/React/my-app/node_modules/node-sass/scripts/install.js#sass#150;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/npmlog/log.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/src/logo.svg</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/matchPath.js#matchPath#88;C:/React/my-app/node_modules/react-router/matchPath.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/matchPath.js#matchPath#88;C:/React/my-app/node_modules/react-router-dom/matchPath.js#warnAboutDeprecatedCJSRequire.js#14;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/matchPath.js#matchPath#146;C:/React/my-app/node_modules/react-router-dom/es/matchPath.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/matchPath.js#matchPath#146;C:/React/my-app/node_modules/react-router/es/matchPath.js#warnAboutDeprecatedESMImport#22;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/net.d.ts#AddressInfo#310;C:/React/my-app/node_modules/@types/node/net.d.ts#Server#7144;C:/React/my-app/node_modules/@types/node/net.d.ts#Socket#942;C:/React/my-app/node_modules/@types/node/net.d.ts#dns#110;C:/React/my-app/node_modules/@types/node/net.d.ts#events#72;C:/React/my-app/node_modules/@types/node/net.d.ts#stream#34;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/bin/node-sass#Emitter#35;C:/React/my-app/node_modules/node-sass/bin/node-sass#Gaze#115;C:/React/my-app/node_modules/node-sass/bin/node-sass#forEach#79;C:/React/my-app/node_modules/node-sass/bin/node-sass#fs#418;C:/React/my-app/node_modules/node-sass/bin/node-sass#glob#219;C:/React/my-app/node_modules/node-sass/bin/node-sass#meow#141;C:/React/my-app/node_modules/node-sass/bin/node-sass#options.functions#8686;C:/React/my-app/node_modules/node-sass/bin/node-sass#options.importer#8401;C:/React/my-app/node_modules/node-sass/bin/node-sass#path#193;C:/React/my-app/node_modules/node-sass/bin/node-sass#render#273;C:/React/my-app/node_modules/node-sass/bin/node-sass#sass#245;C:/React/my-app/node_modules/node-sass/bin/node-sass#stdin#386;C:/React/my-app/node_modules/node-sass/bin/node-sass#stdout#349;C:/React/my-app/node_modules/node-sass/bin/node-sass#util#167;C:/React/my-app/node_modules/node-sass/bin/node-sass#watcher#310;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/package.json</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/perf_hooks.d.ts#AsyncResource#43;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/scripts/prepublish.js#path#46;C:/React/my-app/node_modules/node-sass/scripts/prepublish.js#rimraf#72;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/profiling.js#react-dom.development.js#1317;C:/React/my-app/node_modules/react-dom/profiling.js#react-dom.profiling.min.js#1244;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/scripts/util/proxy.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/querystring.d.ts#ParsedUrlQuery#245;C:/React/my-app/node_modules/@types/node/querystring.d.ts#ParsedUrlQueryInput#313;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/lib/react-app.d.ts#React#720;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-server.browser.development.js#react#393;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.development.js#React#396;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.browser.development.js#_assign#356;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.browser.development.js#checkPropTypes#426;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-server.browser.production.min.js#react#361;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js#p#279;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js#q#306;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.development.js#React#393;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.node.development.js#_assign#353;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.node.development.js#checkPropTypes#423;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.node.development.js#stream#482;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.production.min.js#aa#322;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.node.production.min.js#p#276;C:/React/my-app/node_modules/react-dom/cjs/react-dom-server.node.production.min.js#q#303;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-test-utils.development.js#index.js#407;C:/React/my-app/node_modules/react-dom/umd/react-dom-test-utils.development.js#react#389;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-test-utils.development.js#React#392;C:/React/my-app/node_modules/react-dom/cjs/react-dom-test-utils.development.js#ReactDOM#422;C:/React/my-app/node_modules/react-dom/cjs/react-dom-test-utils.development.js#_assign#352;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-test-utils.production.min.js#index.js#374;C:/React/my-app/node_modules/react-dom/umd/react-dom-test-utils.production.min.js#react#357;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-test-utils.production.min.js#g#275;C:/React/my-app/node_modules/react-dom/cjs/react-dom-test-utils.production.min.js#l#302;C:/React/my-app/node_modules/react-dom/cjs/react-dom-test-utils.production.min.js#m#321;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-fire.development.js#react#392;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fire.development.js#React#355;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.development.js#_assign#385;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.development.js#checkPropTypes#425;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.development.js#scheduler#484;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.development.js#tracing#522;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-fire.production.min.js#react#410;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fire.production.min.js#aa#325;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.production.min.js#n#345;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.production.min.js#r#372;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-fire.profiling.min.js#react#408;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fire.profiling.min.js#aa#324;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.profiling.min.js#n#344;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.profiling.min.js#r#371;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-fire.profiling.min.js#v#394;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.browser.development.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.browser.production.min.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.node.development.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-fizz.node.production.min.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-native-dependencies.development.js#index.js#407;C:/React/my-app/node_modules/react-dom/umd/react-dom-unstable-native-dependencies.development.js#react#429;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-native-dependencies.development.js#ReactDOM#370;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-native-dependencies.development.js#_assign#407;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom-unstable-native-dependencies.production.min.js#index.js#375;C:/React/my-app/node_modules/react-dom/umd/react-dom-unstable-native-dependencies.production.min.js#react#396;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-unstable-native-dependencies.production.min.js#k#293;C:/React/my-app/node_modules/react-dom/cjs/react-dom-unstable-native-dependencies.production.min.js#l#316;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.development.js#react#378;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js#React#341;C:/React/my-app/node_modules/react-dom/cjs/react-dom.development.js#_assign#371;C:/React/my-app/node_modules/react-dom/cjs/react-dom.development.js#checkPropTypes#411;C:/React/my-app/node_modules/react-dom/cjs/react-dom.development.js#scheduler#470;C:/React/my-app/node_modules/react-dom/cjs/react-dom.development.js#tracing#508;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.production.min.js#react#396;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.production.min.js#aa#311;C:/React/my-app/node_modules/react-dom/cjs/react-dom.production.min.js#n#331;C:/React/my-app/node_modules/react-dom/cjs/react-dom.production.min.js#r#358;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/umd/react-dom.profiling.min.js#react#394;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.profiling.min.js#aa#310;C:/React/my-app/node_modules/react-dom/cjs/react-dom.profiling.min.js#n#330;C:/React/my-app/node_modules/react-dom/cjs/react-dom.profiling.min.js#r#357;C:/React/my-app/node_modules/react-dom/cjs/react-dom.profiling.min.js#v#380;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/esm/react-router-dom.js#BrowserRouter#618;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#HashRouter#1950;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#Link#3354;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#NavLink#5820;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#PropTypes#281;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#React#78;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#Route#132;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#Router#107;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#__RouterContext#115;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#_extends#353;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#_inheritsLoose#7;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#_objectWithoutPropertiesLoose#412;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#createBrowserHistory#200;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#createHashHistory#222;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#createLocation#241;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#invariant#513;C:/React/my-app/node_modules/react-router-dom/esm/react-router-dom.js#warning#317;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/cjs/react-router-dom.js#PropTypes#323;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#React#199;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#history#289;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#invariant#435;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#reactRouter#246;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.js#warning#379;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/umd/react-router-dom.js#react#111;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/cjs/react-router-dom.min.js#React#156;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.min.js#history#232;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.min.js#index.js#259;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.min.js#invariant#309;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.min.js#reactRouter#196;C:/React/my-app/node_modules/react-router-dom/cjs/react-router-dom.min.js#tiny-warning.esm.js#281;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/umd/react-router-dom.min.js#react#78;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/esm/react-router.js#MemoryRouter#3464;C:/React/my-app/node_modules/react-router/esm/react-router.js#Prompt#5479;C:/React/my-app/node_modules/react-router/esm/react-router.js#PropTypes#155;C:/React/my-app/node_modules/react-router/esm/react-router.js#React#128;C:/React/my-app/node_modules/react-router/esm/react-router.js#Redirect#7267;C:/React/my-app/node_modules/react-router/esm/react-router.js#Route#10960;C:/React/my-app/node_modules/react-router/esm/react-router.js#Router#1073;C:/React/my-app/node_modules/react-router/esm/react-router.js#StaticRouter#16208;C:/React/my-app/node_modules/react-router/esm/react-router.js#Switch#19225;C:/React/my-app/node_modules/react-router/esm/react-router.js#__RouterContext#23115;C:/React/my-app/node_modules/react-router/esm/react-router.js#_extends#404;C:/React/my-app/node_modules/react-router/esm/react-router.js#_inheritsLoose#57;C:/React/my-app/node_modules/react-router/esm/react-router.js#_objectWithoutPropertiesLoose#510;C:/React/my-app/node_modules/react-router/esm/react-router.js#createContext#7;C:/React/my-app/node_modules/react-router/esm/react-router.js#createLocation#250;C:/React/my-app/node_modules/react-router/esm/react-router.js#createMemoryHistory#229;C:/React/my-app/node_modules/react-router/esm/react-router.js#createPath#285;C:/React/my-app/node_modules/react-router/esm/react-router.js#generatePath#6967;C:/React/my-app/node_modules/react-router/esm/react-router.js#hoistStatics#611;C:/React/my-app/node_modules/react-router/esm/react-router.js#invariant#321;C:/React/my-app/node_modules/react-router/esm/react-router.js#isValidElementType#465;C:/React/my-app/node_modules/react-router/esm/react-router.js#locationsAreEqual#266;C:/React/my-app/node_modules/react-router/esm/react-router.js#matchPath#9301;C:/React/my-app/node_modules/react-router/esm/react-router.js#pathToRegexp#361;C:/React/my-app/node_modules/react-router/esm/react-router.js#warning#191;C:/React/my-app/node_modules/react-router/esm/react-router.js#withRouter#21421;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/cjs/react-router.js#PropTypes#316;C:/React/my-app/node_modules/react-router/cjs/react-router.js#React#269;C:/React/my-app/node_modules/react-router/cjs/react-router.js#createContext#199;C:/React/my-app/node_modules/react-router/cjs/react-router.js#history#428;C:/React/my-app/node_modules/react-router/cjs/react-router.js#hoistStatics#620;C:/React/my-app/node_modules/react-router/cjs/react-router.js#invariant#462;C:/React/my-app/node_modules/react-router/cjs/react-router.js#pathToRegexp#522;C:/React/my-app/node_modules/react-router/cjs/react-router.js#reactIs#585;C:/React/my-app/node_modules/react-router/cjs/react-router.js#warning#372;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/umd/react-router.js#react#112;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/cjs/react-router.min.js#React#219;C:/React/my-app/node_modules/react-router/cjs/react-router.min.js#createContext#156;C:/React/my-app/node_modules/react-router/cjs/react-router.min.js#history#309;C:/React/my-app/node_modules/react-router/cjs/react-router.min.js#hoistStatics#469;C:/React/my-app/node_modules/react-router/cjs/react-router.min.js#index.js#259;C:/React/my-app/node_modules/react-router/cjs/react-router.min.js#invariant#336;C:/React/my-app/node_modules/react-router/cjs/react-router.min.js#pathToRegexp#389;C:/React/my-app/node_modules/react-router/cjs/react-router.min.js#tiny-warning.esm.js#281;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/umd/react-router.min.js#react#78;</node>
+            <node x="" y="">$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/cjs/react.development.js#_assign#337;C:/React/my-app/node_modules/react/cjs/react.development.js#checkPropTypes#377;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/cjs/react.production.min.js#k#260;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/readline.d.ts#AsyncCompleter#4995;C:/React/my-app/node_modules/@types/node/readline.d.ts#Completer#4939;C:/React/my-app/node_modules/@types/node/readline.d.ts#Interface#259;C:/React/my-app/node_modules/@types/node/readline.d.ts#events#39;C:/React/my-app/node_modules/@types/node/readline.d.ts#stream#77;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/lib/render.js#chalk#41;C:/React/my-app/node_modules/node-sass/lib/render.js#fs#69;C:/React/my-app/node_modules/node-sass/lib/render.js#mkdirp#91;C:/React/my-app/node_modules/node-sass/lib/render.js#path#121;C:/React/my-app/node_modules/node-sass/lib/render.js#sass#147;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/repl.d.ts#AsyncCompleter#59;C:/React/my-app/node_modules/@types/node/repl.d.ts#Completer#48;C:/React/my-app/node_modules/@types/node/repl.d.ts#Context#106;C:/React/my-app/node_modules/@types/node/repl.d.ts#InspectOptions#140;C:/React/my-app/node_modules/@types/node/repl.d.ts#Interface#37;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/rimraf/rimraf.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/sass-graph/sass-graph.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/server.browser.js#react-dom-server.browser.development.js#168;C:/React/my-app/node_modules/react-dom/server.browser.js#react-dom-server.browser.production.min.js#79;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/server.js#server.node.js#32;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/server.node.js#react-dom-server.node.development.js#165;C:/React/my-app/node_modules/react-dom/server.node.js#react-dom-server.node.production.min.js#79;</node>
+            <node x="" y="">$PROJECT_DIR$/src/serviceWorker.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-scripts/template-typescript/src/serviceWorker.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/stream.d.ts#Pipe#16544;C:/React/my-app/node_modules/@types/node/stream.d.ts#Readable#637;C:/React/my-app/node_modules/@types/node/stream.d.ts#Stream#250;C:/React/my-app/node_modules/@types/node/stream.d.ts#Writable#5510;C:/React/my-app/node_modules/@types/node/stream.d.ts#events#37;</node>
+            <node x="" y="">$PROJECT_DIR$/src/style.scss</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/test-utils.js#react-dom-test-utils.development.js#164;C:/React/my-app/node_modules/react-dom/test-utils.js#react-dom-test-utils.production.min.js#79;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/tiny-warning/dist/tiny-warning.esm.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/tls.d.ts#crypto#34;C:/React/my-app/node_modules/@types/node/tls.d.ts#dns#72;C:/React/my-app/node_modules/@types/node/tls.d.ts#net#104;C:/React/my-app/node_modules/@types/node/tls.d.ts#stream#136;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/scheduler/tracing.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/tty.d.ts#net#34;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/unstable-fizz.browser.js#react-dom-unstable-fizz.browser.development.js#175;C:/React/my-app/node_modules/react-dom/unstable-fizz.browser.js#react-dom-unstable-fizz.browser.production.min.js#79;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/unstable-fizz.js#unstable-fizz.node.js#32;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/unstable-fizz.node.js#react-dom-unstable-fizz.node.development.js#172;C:/React/my-app/node_modules/react-dom/unstable-fizz.node.js#react-dom-unstable-fizz.node.production.min.js#79;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/unstable-native-dependencies.js#react-dom-unstable-native-dependencies.development.js#182;C:/React/my-app/node_modules/react-dom/unstable-native-dependencies.js#react-dom-unstable-native-dependencies.production.min.js#79;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/url.d.ts#ParsedUrlQuery#36;C:/React/my-app/node_modules/@types/node/url.d.ts#ParsedUrlQueryInput#52;C:/React/my-app/node_modules/@types/node/url.d.ts#URL#2274;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/scripts/util/useragent.js#pkg#4;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/util.d.ts#InspectOptions#28;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/v8.d.ts#Readable#35;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/vm.d.ts#Context#26;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/warnAboutDeprecatedCJSRequire.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/warnAboutDeprecatedCJSRequire.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/warnAboutDeprecatedCJSRequire.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/warnAboutDeprecatedESMImport.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/warnAboutDeprecatedESMImport.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/es/warnAboutDeprecatedESMImport.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/node-sass/lib/watcher.js#clonedeep#39;C:/React/my-app/node_modules/node-sass/lib/watcher.js#grapher#4;C:/React/my-app/node_modules/node-sass/lib/watcher.js#path#82;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/withRouter.js#warnAboutDeprecatedCJSRequire.js#14;C:/React/my-app/node_modules/react-router/withRouter.js#withRouter#89;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/withRouter.js#warnAboutDeprecatedCJSRequire.js#14;C:/React/my-app/node_modules/react-router-dom/withRouter.js#withRouter#89;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router-dom/es/withRouter.js#warnAboutDeprecatedESMImport#22;C:/React/my-app/node_modules/react-router-dom/es/withRouter.js#withRouter#147;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/withRouter.js#warnAboutDeprecatedESMImport#22;C:/React/my-app/node_modules/react-router/es/withRouter.js#withRouter#147;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/worker_threads.d.ts#Context#47;C:/React/my-app/node_modules/@types/node/worker_threads.d.ts#EventEmitter#81;C:/React/my-app/node_modules/@types/node/worker_threads.d.ts#Readable#124;C:/React/my-app/node_modules/@types/node/worker_threads.d.ts#Writable#134;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/yargs/yargs.d.ts#Argv#9;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/zlib.d.ts#stream#35;</node>
+            <node x="" y="">%PUBLIC_URL%/favicon.ico</node>
+            <node x="" y="">%PUBLIC_URL%/manifest.json</node>
+            <node x="" y="">coveralls</node>
+            <node x="" y="">fs</node>
+            <node x="" y="">istanbul</node>
+            <node x="" y="">mocha</node>
+            <node x="" y="">options.functions</node>
+            <node x="" y="">options.importer</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/node/os.d.ts#EOL#5183;</node>
+            <node x="" y="">path</node>
+            <node x="" y="">react</node>
+            <node x="" y="">react-dom</node>
+            <node x="" y="">stream</node>
+            <node x="" y="">util</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="2221.0" y="4852.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/db.json" />
+    <entry file="file://$PROJECT_DIR$/build/index.html" />
+    <entry file="file://$PROJECT_DIR$/build/static/js/2.dc155f86.chunk.js" />
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.4e7a6fd1.chunk.js" />
+    <entry file="file://$PROJECT_DIR$/build/static/js/runtime~main.a8a9905a.js" />
+    <entry file="file://$PROJECT_DIR$/build/static/css/main.38197ec0.chunk.css" />
+    <entry file="file://$PROJECT_DIR$/src/components/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LogInForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/SnS/SnS/public/src/modules/service-conteiner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/SnS/SnS/public/src/modules/user-login-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ShadowBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/SnS/SnS/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="186" column="23" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/users.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/services.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="3" selection-start-line="1" selection-start-column="1" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/orders.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CartItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/SnS/SnS/public/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/RegisterForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LogIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="135" column="245" lean-forward="true" selection-start-line="135" selection-start-column="245" selection-end-line="135" selection-end-column="245" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/SnS/SnS/public/src/modules/user-registration-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="84" column="98" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="211" column="21" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Reg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
