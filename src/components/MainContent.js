@@ -1,17 +1,19 @@
 import React from 'react';
 
-import Service from './Service'
+import Service from './dump/Service'
 
 
 
 export default (props) => {
     const services = Object.values({...props.data});
     return (
-        <main className='main'>
-            {services.map(el => (
-                <Service  key={el.id} id={el.id} element={el} handler={props.handler} showState={props.showState} addToCart={props.addToCart}/>
-            ))}
-        </main>
+        <>
+            <main className='main'>
+                {services.map(el => (
+                    <Service  key={el.id} id={el.id} element={el} handler={props.handler} showState={props.showState} addToCart={props.addToCart}/>
+                ))}
+            </main>
+        </>
     )
 }
 

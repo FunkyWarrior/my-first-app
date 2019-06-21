@@ -1,17 +1,32 @@
 import React from 'react';
+import {connect} from 'react-redux'
+import {Switch, Route, Link} from "react-router-dom";
+import {
+    setCurrentUser,
+    setDataOrders,
+    setDataServices,
+    setDataUsers,
+    setCartArray,
+    setCartGroup,
+    setCartSum
+} from "./store/app/actions";
 
-import Navigation from './components/Navigation'
+import About from "./components/Pages/About";
+import Contacts from "./components/Pages/Contacts";
+import Reviews from "./components/Pages/Reviews";
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ShadowBox from './components/ShadowBox'
-import LogIn from './components/LogIn'
-import Reg from './components/Reg'
-import Cart from './components/Cart'
+
+import ProductsContainer from "./components/Products/ProductsContainer"
+import CartContainer from "./components/Cart/CartContainer"
+import OrdersContainer from "./components/Orders/OrdersContainer";
+import AuthContainer from "./components/Auth/AuthContainer";
+import RegistrationContainer from "./components/Registration/RegistrationContainer";
 
 
 
-
-export default class App extends React.Component {
+export class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -21,119 +36,187 @@ export default class App extends React.Component {
             showReg:false,
             showUserForm:false,
             showCart:false,
-            log_email:'',
-            log_password:'',
-            reg_name:'',
-            reg_Lname:'',
-            reg_email:'',
-            reg_phone:'',
-            reg_avatar:'',
-            reg_password1:'',
-            reg_password2:'',
-            currentUser:null,
-            cartArray:[],
-            sum:0,
-            dataServices: {},
-            dataUsers:{},
-            dataOrders:{},
         };
-
-
+        this.counter = 1
     }
+
     checkUser = (e) => {
-        let user = this.state.dataUsers.find(u => u.email === this.state.log_email);
+        const user = this.props.app.dataUsers.find(u => u.email === this.props.auth.authForm[0].value);
         if(user){
-            if(user.password === this.state.log_password){
-                this.setState({currentUser:user});
+            if(user.password === this.props.auth.authForm[1].value){
+                this.props.setCurrentUser(user);
                 this.showLog();
                 this.showShadow();
                 this.setState({showUserForm:!this.state.showUserForm})
+
             }else alert('Password doesnt match')
         }else alert('Email doesnt match');
-
         e.preventDefault()
     };
 
-    addToCart = (e) => {
-        if (this.state.currentUser){
-            const that = e.target.parentElement.parentElement.parentElement.id;
-            const product = this.state.dataServices.find(s => s.id == that);
-            const arr = this.state.cartArray.slice();
-            const check = arr.find(c => c.id == product.id);
-            if (check){
-                check.count++
-            }else{
-                arr.push(
-                    {
-                       id:product.id,
-                       count:1
-                    }
-                );
+    regNewUser =  (event) => {
+        let some = true;
+        // eslint-disable-next-line array-callback-return
+        this.props.app.dataUsers.map(u => {
+            if (u.email === this.props.reg.regForm[2].value){
+                alert('Email already taken');
+                some=false;
             }
-            this.setState({cartArray:arr});
-            this.setState({sum:this.state.sum+product.price});
-            this.setState({showCart:true});
-        }else {
+        });
+        if (some) {
+            if (!(this.props.reg.regForm[5].value === this.props.reg.regForm[6].value)){
+                alert('Password doesnt match');
+                some=false;
+            }
+        }
+        if (some) {
+            let dataArray = this.props.app.dataUsers.slice();
+            dataArray.push(
+                {
+                    name:`${this.props.reg.regForm[0].value}`,
+                    lastName:`${this.props.reg.regForm[1].value}`,
+                    email:`${this.props.reg.regForm[2].value}`,
+                    id:this.props.app.dataUsers[this.props.app.dataUsers.length-1].id + 1,
+                    phone:`${this.props.reg.regForm[3].value}`,
+                    avatarUrl:`${this.props.reg.regForm[4].value}`,
+                    password:`${this.props.reg.regForm[5].value}`,
+                    root:false,
+                }
+            );
+            fetch('https://boris-first-app.firebaseio.com/users.json', {
+                method: "PUT",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dataArray)
+            });
+            this.props.setCurrentUser(
+                    {
+                        name:`${this.props.reg.regForm[0].value}`,
+                        lastName:`${this.props.reg.regForm[1].value}`,
+                        email:`${this.props.reg.regForm[2].value}`,
+                        id:this.props.app.dataUsers[this.props.app.dataUsers.length-1].id + 1,
+                        phone:`${this.props.reg.regForm[3].value}`,
+                        avatarUrl:`${this.props.reg.regForm[4].value}`,
+                        password:`${this.props.reg.regForm[5].value}`,
+                        root:false,
+                    }
+            );
+            this.showShadow();
+            this.setState({showUserForm:!this.state.showUserForm});
+            this.setState({showReg:!this.state.showReg});
+            this.setState({showShadow:!this.state.showShadow});
+        }
+        event.preventDefault();
+    };
+
+    addToCart = (e) => {
+        if (this.props.app.currentUser) {
+            const that = e.target.parentElement.parentElement.parentElement.id;
+            const group = e.target.name;
+            this.props.setCartGroup(group);
+            const product = this.props.app.dataServices[`${group}`].find(s => s.id === Number(that));
+            const arr = this.props.app.cartArray.slice();
+            const check = arr.find(c => (c.productId === product.id && c.group === product.group));
+            if (check) {
+                check.count++
+            } else {
+                arr.push({
+                    group: group,
+                    productId: product.id,
+                    count: 1,
+                    id: this.counter
+                });
+                this.counter++
+            }
+            this.props.setCartArray(arr);
+            this.props.setCartSum(this.props.app.cartSum + product.price);
+            this.setState({showCart: true});
+        } else {
             alert('Please Log In')
         }
     };
+
     moreProduct = (e) => {
         const that = e.target.parentElement.parentElement.id;
-        const arr = this.state.cartArray.slice();
-        const price = this.state.dataServices.find(el => el.id == that);
-        const product = arr.find(el => el.id == that);
+        const group = e.target.name;
+        const arr = this.props.app.cartArray.slice();
+        const price = this.props.app.dataServices[`${group}`].find(el => el.id === Number(that));
+        const product = arr.find(el => el.productId === Number(that) && el.group === group);
         product.count++;
-        this.setState({sum:this.state.sum+price.price});
-        this.setState({cartArray:arr})
+        this.props.setCartSum(this.props.app.cartSum + price.price);
+        this.props.setCartArray(arr);
+
     };
 
     lessProduct =(e) => {
         const that = e.target.parentElement.parentElement.id;
-        const price = this.state.dataServices.find(el => el.id == that);
-        const arr = this.state.cartArray.slice();
-        arr.map(el => {
-            if (el.id == that){
-                el.count--;
-                this.setState({sum:this.state.sum-price.price});
+        const group = e.target.name;
+        const arr = this.props.app.cartArray.slice();
+        const price = this.props.app.dataServices[`${group}`].find(el => el.id === Number(that));
+        // eslint-disable-next-line array-callback-return
+        arr.map(product => {
+            if (product.productId === Number(that) && product.group === group){
+                product.count--;
+                this.props.setCartSum(this.props.app.cartSum - price.price);
             }
-            if (el.count === 0) arr.splice(el,1);
-            if (arr.length === 0) this.setState({showCart:false});
+            if (product.count === 0) arr.splice(arr.indexOf(product),1);
+            if (arr.length === 0) {
+                this.setState({showCart:false});
+                this.counter = 1
+            }
         });
-        this.setState({cartArray:arr});
+        this.props.setCartArray(arr);
+
     };
 
     deleteProduct = (e) => {
         const that = e.target.parentElement.parentElement.id;
-        const price = this.state.dataServices.find(el => el.id == that);
-        const arr = this.state.cartArray.slice();
-        const product = arr.find(el => el.id == that);
-        this.setState({sum:this.state.sum-(price.price*product.count)});
-        arr.splice(product,1);
-        if (arr.length === 0) this.setState({showCart:false});
-        this.setState({cartArray:arr});
+        const group = e.target.name;
+        const arr = this.props.app.cartArray.slice();
+        const price = this.props.app.dataServices[`${group}`].find(el => el.id === Number(that));
+        // eslint-disable-next-line array-callback-return
+        arr.map(product => {
+            if (product.productId === Number(that) && product.group === group){
+                arr.splice(arr.indexOf(product),1);
+                this.props.setCartSum(this.props.app.cartSum - (price.price*product.count));
+            }
+            if (arr.length === 0) {
+                this.setState({showCart:false});
+                this.counter = 1
+            }
+        });
+        if (arr.length === 0) {
+            this.setState({showCart:false});
+            this.counter = 1
+        }
+        this.props.setCartArray(arr);
     };
 
     pushOrder = () => {
-        fetch('http://localhost:3001/orders', {
-            method: "POST",
+        let dataArray = this.props.app.dataOrders.slice();
+        dataArray.push(
+            {
+                userId: this.props.app.currentUser.id,
+                status:'pending',
+                totalSum:this.props.app.cartSum,
+                date:new Date().toLocaleString(),
+                id:this.props.app.dataOrders[this.props.app.dataOrders.length-1].id + 1,
+                order: this.props.app.cartArray
+            }
+        );
+        fetch('https://boris-first-app.firebaseio.com/orders.json', {
+            method: "PUT",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                userId: this.state.currentUser.id,
-                status:'pending',
-                totalSum:this.state.sum,
-                order: this.state.cartArray
-            })
+            body: JSON.stringify(dataArray)
         });
-        this.setState({cartArray:[]});
+        this.props.setCartArray([]);
+        this.props.setCartSum(0);
+        this.props.setCartGroup('');
         this.setState({showCart:false});
-    };
-
-
-     getInputValues = (e) => {
-        this.setState({[e.target.name] : e.target.value});
-        console.log(this.state.reg_name,          this.state.reg_Lname ,           this.state.reg_email   ,         this.state.reg_phone        ,    this.state.reg_avatar        ,    this.state.reg_password1,            this.state.reg_password2)
+        this.componentDidMount()
     };
 
     showLog = () => {
@@ -141,13 +224,14 @@ export default class App extends React.Component {
         this.showShadow()
     };
 
-
     showReg = () => {
         this.setState({ showReg: !this.state.showReg });
-        this.showShadow()
+        this.showShadow();
     };
 
-    showMoreInfo =() => this.setState({moreInfo: !this.state.moreInfo});
+    showMoreInfo =() => {
+        this.setState({moreInfo: !this.state.moreInfo});
+    };
 
     clearShadow =() => {
         this.setState({showShadow: (!(this.state.showShadow && !this.state.moreInfo))});
@@ -157,32 +241,66 @@ export default class App extends React.Component {
 
     showShadow = () => this.setState({ showShadow: !this.state.showShadow });
 
-    fetchData = (where,what) => {
-        fetch(`http://localhost:3001/${what}`)
-        .then(response => response.json())
-        .then(result => this.setState({[where]: result}));
+    componentDidMount () {
+        fetch(`https://boris-first-app.firebaseio.com/.json`)
+            .then(response => response.json())
+            .then(result => {
+                this.props.setDataUsers(result.users);
+                this.props.setDataServices(result.services);
+                this.props.setDataOrders(result.orders);
+            })
     };
 
-
-    componentDidMount() {
-        this.fetchData('dataServices','services');
-        this.fetchData('dataOrders','orders');
-        this.fetchData('dataUsers','users')
-    }
-
-    render() {
-        return (
+     render () {
+        let userId;
+        let kotiki=[];
+        let pesiki=[];
+        if (this.props.app.currentUser){
+            userId = this.props.app.currentUser.id
+        }
+        if (JSON.stringify(this.props.app.dataServices) !== '{}'){
+            kotiki = this.props.app.dataServices.kotiki.slice();
+            pesiki = this.props.app.dataServices.pesiki.slice();
+        }
+          return (
             <>
-                <Header handler1={this.showLog} handler2={this.showReg} show={this.state.showUserForm} user={this.state.currentUser}/>
-                <Navigation data={this.state.dataServices} handler={this.showShadow} showState={this.showMoreInfo} addToCart={this.addToCart}/>
+                <Header handler1={this.showLog} handler2={this.showReg} show={this.state.showUserForm} user={this.props.app.currentUser} />
+                <div className='outer'>
+                    <Switch>
+                        <Route exact path='/products/kotiki' render={()=><ProductsContainer dataServices={kotiki}  showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
+                        <Route exact path='/products/pesiki' render={()=><ProductsContainer dataServices={pesiki}  showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
+                        <Route exact path={`/user/${userId}/orders`} render={()=><OrdersContainer /> } />
+                        <Route exact path='/' render={()=><About />} />
+                        <Route exact path='/contacts' render={()=><Contacts />} />
+                        <Route exact path='/reviews' render={()=><Reviews />} />
+                    </Switch>
+                </div>
                 <Footer />
                 {this.state.showShadow && <ShadowBox handler={this.clearShadow}/>}
-                {this.state.showLog && <LogIn logIn ={this.checkUser} handler={this.getInputValues}/>}
-                {this.state.showReg && <Reg handler={this.getInputValues}/>}
-                {this.state.showCart && <Cart data={this.state.dataServices} cartArray={this.state.cartArray} sum={this.state.sum} buy={this.pushOrder} more={this.moreProduct} less={this.lessProduct} deleteP={this.deleteProduct}/>}
+                {this.state.showLog && <AuthContainer checkUser={this.checkUser}/>}
+                {this.state.showReg && <RegistrationContainer regNewUser={this.regNewUser} />}
+                {this.state.showCart && <CartContainer buy={this.pushOrder} more={this.moreProduct} less={this.lessProduct} deleteP={this.deleteProduct}/>}
             </>
         );
     }
 }
 
+const mapStateToProps = state => {
+    return {
+        app:state.app,
+        auth:state.auth,
+        reg:state.registration
+    }
+};
 
+const mapDispatchToProps = {
+    setDataUsers,
+    setDataOrders,
+    setDataServices,
+    setCurrentUser,
+    setCartArray,
+    setCartSum,
+    setCartGroup
+};
+
+export default connect (mapStateToProps,mapDispatchToProps)(App)
