@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux";
+import {Link} from "react-router-dom";
 
 import Orders from './Orders'
 import {setDataOrders} from "../../store/app/actions";
@@ -26,6 +27,14 @@ class OrdersContainer extends React.Component {
                 });
             }
         }
+        if (this.props.flag) {
+            ordersArray=[];
+            this.props.dataOrders.map(el => {
+                if(el.userId === +this.props.userId) {
+                    ordersArray.push(el)
+                }
+            });
+        }
             ordersArray.sort(function(a, b) {
                 if (a.status > b.status) return -1;
                 if (a.status < b.status) return 1;
@@ -42,7 +51,7 @@ class OrdersContainer extends React.Component {
                             <div className='orders__info'>
                                 <p>{`ID: ${order.id}`}</p>
                                 <p className='orders__date'>{order.date}</p>
-                                <p>{this.props.currentUser.root ? this.props.dataUsers.find(u => u.id === order.userId).email : `Email: ${this.props.currentUser.email}`}</p>
+                                <p>{this.props.currentUser.root ? <Link to={`/info/user/${order.userId}`}>{this.props.dataUsers.find(u => u.id === order.userId).email }</Link>: `Email: ${this.props.currentUser.email}`}</p>
                                 {!this.props.currentUser.root ? <p>{`Status: ${order.status}`}</p>
                                     :   <select className='orders__select'>
                                         <option >{order.status}</option>
@@ -64,7 +73,8 @@ const mapStateToProps = state => {
         currentUser:state.app.currentUser,
         dataServices:state.app.dataServices,
         dataOrders:state.app.dataOrders,
-        dataUsers:state.app.dataUsers
+        dataUsers:state.app.dataUsers,
+
 
     }
 };

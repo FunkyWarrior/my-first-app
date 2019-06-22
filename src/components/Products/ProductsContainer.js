@@ -7,13 +7,13 @@ import Products from './Products'
 
 class ProductsContainer extends React.Component {
     render() {
-        let data = [];
-        if (this.props.dataServices[`${this.props.location.pathname.slice(this.props.location.pathname.length-6,this.props.location.pathname.length)}`]) {
-            data = this.props.dataServices[`${this.props.location.pathname.slice(this.props.location.pathname.length-6,this.props.location.pathname.length)}`]
-        }
+        // let data = [];
+        // if (this.props.dataServices[`${this.props.location.pathname.slice(this.props.location.pathname.length-6,this.props.location.pathname.length)}`]) {
+        //     data = this.props.dataServices[`${this.props.location.pathname.slice(this.props.location.pathname.length-6,this.props.location.pathname.length)}`]
+        // }
         return (
                 <main className='main'>
-                    {data.map(el => (
+                    {this.props.dataServices[`${this.props.location.pathname.slice(this.props.location.pathname.length-6,this.props.location.pathname.length)}`].map(el => (
                         <Products
                             key={el.id}
                             id={el.id}

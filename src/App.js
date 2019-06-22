@@ -23,6 +23,7 @@ import CartContainer from "./components/Cart/CartContainer"
 import OrdersContainer from "./components/Orders/OrdersContainer";
 import AuthContainer from "./components/Auth/AuthContainer";
 import RegistrationContainer from "./components/Registration/RegistrationContainer";
+import UserPageContainer from "./components/UserPage/UserPageContainer";
 
 
 
@@ -79,6 +80,7 @@ export class App extends React.Component {
                     id:this.props.app.dataUsers[this.props.app.dataUsers.length-1].id + 1,
                     phone:`${this.props.reg.regForm[3].value}`,
                     avatarUrl:`${this.props.reg.regForm[4].value}`,
+                    regDate:new Date().toLocaleString(),
                     password:`${this.props.reg.regForm[5].value}`,
                     root:false,
                 }
@@ -98,6 +100,7 @@ export class App extends React.Component {
                         id:this.props.app.dataUsers[this.props.app.dataUsers.length-1].id + 1,
                         phone:`${this.props.reg.regForm[3].value}`,
                         avatarUrl:`${this.props.reg.regForm[4].value}`,
+                        regDate:new Date().toLocaleString(),
                         password:`${this.props.reg.regForm[5].value}`,
                         root:false,
                     }
@@ -252,26 +255,17 @@ export class App extends React.Component {
     };
 
      render () {
-        let userId;
-        // let kotiki=[];
-        // let pesiki=[];
-        if (this.props.app.currentUser){
-            userId = this.props.app.currentUser.id
-        }
-        // if (JSON.stringify(this.props.app.dataServices) !== '{}'){
-        //     kotiki = this.props.app.dataServices.kotiki.slice();
-        //     pesiki = this.props.app.dataServices.pesiki.slice();
-        // }
           return (
             <>
                 <Header handler1={this.showLog} handler2={this.showReg} show={this.state.showUserForm} user={this.props.app.currentUser} />
                 <div className='outer'>
                     <Switch>
                         <Route path='/products/' render={(props)=><ProductsContainer {...props} showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
-                        <Route exact path={`/user/${userId}/orders`} component={OrdersContainer} />
+                        <Route exact path={`/user/${this.props.app.currentUser.id}/orders`} component={OrdersContainer} />
                         <Route exact path='/' component={About} />
                         <Route exact path='/contacts' component={Contacts} />
                         <Route exact path='/reviews' component={Reviews} />
+                        {this.props.app.currentUser.root ? <Route exact path='/info/user/:id' component={UserPageContainer} /> : null}
                     </Switch>
                 </div>
                 <Footer />
@@ -303,6 +297,3 @@ const mapDispatchToProps = {
 };
 
 export default connect (mapStateToProps,mapDispatchToProps)(App)
-
-// <Route exact path='/products/pesiki' render={()=><ProductsContainer dataServices={pesiki}  showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
-// dataServices={kotiki}

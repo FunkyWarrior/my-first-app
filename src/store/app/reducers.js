@@ -10,9 +10,15 @@ import {
 
 const defaultState = {
     dataUsers:[],
-    dataServices:{},
+    dataServices:{
+        kotiki:[],
+        pesiki:[]
+    },
     dataOrders: [],
-    currentUser:null,
+    currentUser:{
+        id:0,
+        root:false
+    },
     cartArray: [],
     cartGroup:'',
     cartSum:0
