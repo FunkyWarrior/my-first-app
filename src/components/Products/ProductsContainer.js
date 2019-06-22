@@ -7,9 +7,13 @@ import Products from './Products'
 
 class ProductsContainer extends React.Component {
     render() {
+        let data = [];
+        if (this.props.dataServices[`${this.props.location.pathname.slice(this.props.location.pathname.length-6,this.props.location.pathname.length)}`]) {
+            data = this.props.dataServices[`${this.props.location.pathname.slice(this.props.location.pathname.length-6,this.props.location.pathname.length)}`]
+        }
         return (
                 <main className='main'>
-                    {this.props.dataServices.map(el => (
+                    {data.map(el => (
                         <Products
                             key={el.id}
                             id={el.id}
@@ -26,9 +30,8 @@ class ProductsContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-
+        dataServices:state.app.dataServices
     }
 };
-
 
 export default connect(mapStateToProps)(ProductsContainer);

@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {Switch, Route, Link} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 import {
     setCurrentUser,
     setDataOrders,
@@ -253,26 +253,25 @@ export class App extends React.Component {
 
      render () {
         let userId;
-        let kotiki=[];
-        let pesiki=[];
+        // let kotiki=[];
+        // let pesiki=[];
         if (this.props.app.currentUser){
             userId = this.props.app.currentUser.id
         }
-        if (JSON.stringify(this.props.app.dataServices) !== '{}'){
-            kotiki = this.props.app.dataServices.kotiki.slice();
-            pesiki = this.props.app.dataServices.pesiki.slice();
-        }
+        // if (JSON.stringify(this.props.app.dataServices) !== '{}'){
+        //     kotiki = this.props.app.dataServices.kotiki.slice();
+        //     pesiki = this.props.app.dataServices.pesiki.slice();
+        // }
           return (
             <>
                 <Header handler1={this.showLog} handler2={this.showReg} show={this.state.showUserForm} user={this.props.app.currentUser} />
                 <div className='outer'>
                     <Switch>
-                        <Route exact path='/products/kotiki' render={()=><ProductsContainer dataServices={kotiki}  showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
-                        <Route exact path='/products/pesiki' render={()=><ProductsContainer dataServices={pesiki}  showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
-                        <Route exact path={`/user/${userId}/orders`} render={()=><OrdersContainer /> } />
-                        <Route exact path='/' render={()=><About />} />
-                        <Route exact path='/contacts' render={()=><Contacts />} />
-                        <Route exact path='/reviews' render={()=><Reviews />} />
+                        <Route path='/products/' render={(props)=><ProductsContainer {...props} showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
+                        <Route exact path={`/user/${userId}/orders`} component={OrdersContainer} />
+                        <Route exact path='/' component={About} />
+                        <Route exact path='/contacts' component={Contacts} />
+                        <Route exact path='/reviews' component={Reviews} />
                     </Switch>
                 </div>
                 <Footer />
@@ -304,3 +303,6 @@ const mapDispatchToProps = {
 };
 
 export default connect (mapStateToProps,mapDispatchToProps)(App)
+
+// <Route exact path='/products/pesiki' render={()=><ProductsContainer dataServices={pesiki}  showShadow={this.showShadow} showMoreInfo={this.showMoreInfo} addToCart={this.addToCart}/>} />
+// dataServices={kotiki}
