@@ -3,22 +3,23 @@ import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 
 import Orders from './Orders'
-import {setDataOrders} from "../../store/app/actions";
+import {getData} from "../../store/app/actions";
 
 
 class OrdersContainer extends React.Component {
     componentDidMount() {
-        fetch(`https://boris-first-app.firebaseio.com/orders.json`)
-        .then(response => response.json())
-        .then(result => this.props.setDataOrders(result));
+        this.props.getData('orders','dataOrders');
     }
 
     render() {
+
         let ordersArray = [];
         if (this.props.currentUser) {
             if (this.props.currentUser.root) {
+
                 ordersArray = this.props.dataOrders.slice();
             } else {
+
                 // eslint-disable-next-line array-callback-return
                 this.props.dataOrders.map(el => {
                     if (el.userId === this.props.currentUser.id) {
@@ -28,7 +29,9 @@ class OrdersContainer extends React.Component {
             }
         }
         if (this.props.flag) {
+
             ordersArray=[];
+            // eslint-disable-next-line array-callback-return
             this.props.dataOrders.map(el => {
                 if(el.userId === +this.props.userId) {
                     ordersArray.push(el)
@@ -51,8 +54,8 @@ class OrdersContainer extends React.Component {
                             <div className='orders__info'>
                                 <p>{`ID: ${order.id}`}</p>
                                 <p className='orders__date'>{order.date}</p>
-                                <p>{this.props.currentUser.root ? <Link to={`/info/user/${order.userId}`}>{this.props.dataUsers.find(u => u.id === order.userId).email }</Link>: `Email: ${this.props.currentUser.email}`}</p>
-                                {!this.props.currentUser.root ? <p>{`Status: ${order.status}`}</p>
+                                {this.props.currentUser.root ? <Link to={`/info/user/${order.userId}`}>{this.props.dataUsers.find(u => u.id === order.userId).email }</Link> : <p>Email: {this.props.currentUser.email}</p>}
+                                {!this.props.currentUser.root ? <p>Status:{order.status}</p>
                                     :   <select className='orders__select'>
                                         <option >{order.status}</option>
                                         <option >{order.status === 'done' ? 'pending' : 'done'}</option>
@@ -70,17 +73,17 @@ class OrdersContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        currentUser:state.app.currentUser,
+        currentUser:state.auth.currentUser,
         dataServices:state.app.dataServices,
         dataOrders:state.app.dataOrders,
-        dataUsers:state.app.dataUsers,
+        dataUsers:state.auth.dataUsers,
 
 
     }
 };
 
 const mapDispatchToProps = {
-    setDataOrders
+    getData
 
 };
 

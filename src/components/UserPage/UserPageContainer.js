@@ -21,7 +21,7 @@ class UserPageContainer extends React.Component {
 
 const mapStateProps = state => {
     return {
-        dataUsers:state.app.dataUsers,
+        dataUsers:state.auth.dataUsers,
         dataOrders:state.app.dataOrders,
         dataServices:state.app.dataServices
 
