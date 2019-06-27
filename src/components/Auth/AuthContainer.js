@@ -2,15 +2,28 @@ import React from 'react';
 import {connect} from "react-redux";
 
 import Input from '../Input'
-import {changeLogInputValue} from "../../store/auth/actions";
+import {
+    changeLogInputValue,
+    getUsers,
+    checkUserAuthInfo,
+} from "../../store/auth/actions";
+
 
 class AuthContainer extends React.Component {
-    render() {
 
+    componentDidMount() {
+        this.props.getUsers('users','dataUsers')
+    }
+
+    checkUser = (event) => {
+        this.props.checkUserAuthInfo();
+        event.preventDefault()
+    };
+    render() {
         return (
             <div className='logIn'>
                 <h2 className='logIn__title'>Log In Form</h2>
-                <form onSubmit={this.props.checkUser}  className='logIn__form'>
+                <form onSubmit={this.checkUser}  className='logIn__form'>
                     {this.props.form.map(el =>
                         <Input
                             key={el.id}
@@ -36,7 +49,9 @@ const mapStateProps = state => {
 };
 
 const mapDispatchProps = {
-    changeLogInputValue
+    changeLogInputValue,
+    getUsers,
+    checkUserAuthInfo
 };
 
 export default connect(mapStateProps,mapDispatchProps)(AuthContainer);
