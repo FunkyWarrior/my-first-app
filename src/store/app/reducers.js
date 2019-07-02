@@ -10,38 +10,65 @@ import {
     APP_CREATE_CART,
     APP_CHANGE_CART_PRODUCT,
 
+    APP_SET_DATA,
+    APP_CLEAR_DATA
+
 } from "../app/actions";
 
 
 const defaultState = {
-
-    dataServices:{
+    dataServices: localStorage.getItem('dataServices') ? JSON.parse(localStorage.getItem('dataServices')) : {
         kotiki:[],
         pesiki:[]
     },
-    dataOrders: [{
-        date:'',
-        id:0,
-        order:[{
-            count:0,
-            group:'',
+    dataOrders: localStorage.getItem('dataOrders') ? JSON.parse(localStorage.getItem('dataOrders')) :
+        [{
+            date:'',
             id:0,
-            productId: 0
+            order:[{
+                count:0,
+                group:'',
+                id:0,
+                productId: 0
+            }],
+            status:'',
+            totalSum:0,
+            userId:0
         }],
-        status:'',
-        totalSum:0,
-        userId:0
-    }],
-    cartArray: [],
-    cartSum:0,
-    counter:1,
-    showCart:false,
+    cartArray: localStorage.getItem('cartArray') ? JSON.parse(localStorage.getItem('cartArray')) : [],
+    cartSum:localStorage.getItem('cartSum') ? JSON.parse(localStorage.getItem('cartSum')) : 0,
+    counter:localStorage.getItem('counter') ? JSON.parse(localStorage.getItem('counter')) : 1,
+    currentModal:false,
+    alert:null,
     isFetching:false,
     error:null
 };
 
 export const appReducer = (state = defaultState, action) => {
     switch (action.type) {
+// -----------------------------------------------------------------------------------------------------------------
+
+        case APP_SET_DATA : {
+            return {
+                ...state,
+                [action.payload.path]:action.payload.data
+
+            }
+        }
+
+        case APP_CLEAR_DATA : {
+            return {
+                ...state,
+                currentModal:false,
+                alert:null,
+                cartArray: [],
+                cartSum:0,
+                counter:1,
+                isFetching:false,
+                error:null
+            }
+        }
+
 // -----------------------------------------------------------------------------------------------------------------
 
         case GET_REQUEST : {
@@ -126,11 +153,9 @@ export const appReducer = (state = defaultState, action) => {
                         counter:state.counter + 1
                     }
 
-            } else {
-                alert('Please Log In')
-            }
-            return {
-                ...state
+            } else return {
+                ...state,
+                alert:'Please Log In'
             };
 
 // -----------------------------------------------------------------------------------------------------------------

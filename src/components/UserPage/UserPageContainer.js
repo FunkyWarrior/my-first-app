@@ -5,14 +5,13 @@ import UserPage from './UserPage'
 
 class UserPageContainer extends React.Component {
     render() {
-        let userId = this.props.location.pathname.split('/')[this.props.location.pathname.split('/').length -1];
+        const {dataUsers} = this.props
+        const userId = this.props.location.pathname.split('/')[this.props.location.pathname.split('/').length -1];
         return (
             <div className='main'>
                 <UserPage
                     userId={userId}
-                    dataUsers={this.props.dataUsers}
-                    dataOrders={this.props.dataOrders}
-                    dataServices={this.props.dataServices}
+                    dataUsers={dataUsers}
                 />
             </div>
         )
@@ -22,9 +21,6 @@ class UserPageContainer extends React.Component {
 const mapStateProps = state => {
     return {
         dataUsers:state.auth.dataUsers,
-        dataOrders:state.app.dataOrders,
-        dataServices:state.app.dataServices
-
     }
 };
 

@@ -2,19 +2,32 @@ import React from 'react';
 
 export default class extends React.Component {
     render() {
+        const {order,dataServices} = this.props;
         return (
-            <div className='orders__list'>
-                {this.props.order.order.map(el => (
-                    <div className='orders__inner' key={el.id}>
-                        <img className='orders__img' src={this.props.dataServices[`${el.group}`].find(ser => ser.id === el.productId).servicePhoto} alt=""/>
-                        <p>{this.props.dataServices[`${el.group}`].find(ser => ser.id === el.productId).bodyShort}</p>
-                        <p>{this.props.dataServices[`${el.group}`].find(ser => ser.id === el.productId).price}</p>
-                        <p>{el.count}</p>
-                        <p>{Number(this.props.dataServices[`${el.group}`].find(ser => ser.id === el.productId).price) * el.count}</p>
-                    </div>))}
-            </div>
+           <>
+               {order.id && <div className='orders__list'>
+                    {order.order.map(el => {
+                        const service = dataServices[`${el.group}`].find(ser => ser.id === el.productId);
+                        return(
+                        <div className='orders__inner' key={el.id}>
+                            <img
+                                className='orders__img'
+                                src={service.servicePhoto}
+                                alt=""
+                            />
+                            <p>{service.bodyShort}</p>
+
+                            <p>{service.price}</p>
+
+                            <p>{el.count}</p>
+
+                            <p>{+service.price * el.count}</p>
+
+                        </div>
+                    )})}
+                </div>}
+           </>
         );
     }
-
 };
 

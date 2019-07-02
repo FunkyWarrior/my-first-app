@@ -9,13 +9,15 @@ export const PUT_REQUEST_FAIL = "POST_REQUEST_FAIL";
 export const APP_CREATE_CART = "APP_CREATE_CART";
 export const APP_CHANGE_CART_PRODUCT = "APP_CHANGE_CART_PRODUCT";
 
+export const APP_SET_DATA = "APP_SET_DATA";
+export const APP_CLEAR_DATA = "APP_CLEAR_DATA";
 
-//
 // export const REMOVE_REQUEST = "REMOVE_REQUEST";
 // export const REMOVE_REQUEST_SUCCESS = "REMOVE_REQUEST_SUCCESS";
 // export const REMOVE_REQUEST_FAIL = "REMOVE_REQUEST_FAIL";
 
 const URL = "https://boris-first-app.firebaseio.com/";
+
 // -----------------------------------------------------------------------------------------------------------------
 
 const getRequest = payload => ({
@@ -40,6 +42,7 @@ export const getData = (payload,where) => dispatch => {
         .then(res => dispatch(getRequestSuccess({res:res,where:where})))
         .catch(err => dispatch(getRequestFail(err)));
 };
+
 // -----------------------------------------------------------------------------------------------------------------
 
 const putRequest = payload => ({
@@ -71,6 +74,7 @@ export const putDataApp = ({payload,where}) => dispatch => {
         .catch(err => dispatch(putRequestFail(err)));
 
 };
+
 // -----------------------------------------------------------------------------------------------------------------
 
 export const createNewCart = payload => ({
@@ -84,3 +88,12 @@ export const changeCartProduct = payload => ({
 });
 
 // -----------------------------------------------------------------------------------------------------------------
+export const setDataApp = payload => ({
+    type: APP_SET_DATA,
+    payload
+});
+
+export const clearDataApp = payload => ({
+    type: APP_CLEAR_DATA,
+    payload
+});

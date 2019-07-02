@@ -14,7 +14,6 @@ export default class Input extends React.Component {
                 required={this.props.el.required}
                 pattern={this.props.el.pattern}
                 onChange={this.props.changeInputValue}
-
             />
         );
     }

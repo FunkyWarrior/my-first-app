@@ -1,5 +1,8 @@
 import React from 'react';
-import {createNewCart} from "../../store/app/actions";
+import {createNewCart,
+    setDataApp
+} from "../../store/app/actions";
+import {setDataAuth} from "../../store/auth/actions";
 import {connect} from "react-redux";
 
 export class Products extends React.Component {
@@ -11,23 +14,22 @@ export class Products extends React.Component {
         this.props.createNewCart({event:event,currentUser:this.props.currentUser})
     };
 
-    handler = () => {
-        this.props.showShadow();
-        this.setState({ active: !this.state.active });
-        this.props.showMoreInfo();
+    open = () => {
+        this.props.setDataApp({data:this.props.product,path:'currentModal'});
+        this.props.setDataAuth({data:true,path:'showShadow'})
     };
+
 
     render() {
         const props = this.props;
         return (
-            <div  className={!this.state.active ? 'main__content' : 'main__content-open'}>
+            <div  className='main__content'>
                 <div  className='main__inner'>
                     <img title={props.product.bodyShort} className='main__img' src={props.product.servicePhoto} alt=""/>
                     <h3 className='main__short'>{props.product.bodyShort}</h3>
-                    {this.state.active && <h4 className='main__long'>{props.product.bodyLong}</h4>}
                     <p className='main__price'>Price: {props.product.price}</p>
                     <div className='main__buttons'>
-                        <button onClick={this.handler} className='main__info' >{!this.state.active ? 'More Info' : 'Close Info'}</button>
+                        <button onClick={this.open} className='main__info' >More Info</button>
                         <button onClick={this.addToCart} id={props.id} name={props.product.group} className='main__add-cart'>Add to cart</button>
                     </div>
                 </div>
@@ -38,12 +40,15 @@ export class Products extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        currentUser:state.auth.currentUser
+        currentUser:state.auth.currentUser,
+        currentModal:state.app.currentModal
     }
 };
 
 const mapDispatchProps = {
-    createNewCart
+    createNewCart,
+    setDataApp,
+    setDataAuth
 };
 
 export default connect(mapStateToProps,mapDispatchProps)(Products);

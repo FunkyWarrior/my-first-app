@@ -7,8 +7,12 @@ import {
     putDataApp
 } from "../../store/app/actions";
 
-
 class CartContainer extends React.Component {
+    componentWillUnmount() {
+        localStorage.removeItem('cartArray');
+        localStorage.removeItem('cartSum');
+        localStorage.removeItem('counter')
+    }
 
     changeCartProduct = (event) => {
         this.props.changeCartProduct(event)
@@ -23,7 +27,7 @@ class CartContainer extends React.Component {
                     date:new Date().toLocaleString(),
                     order:this.props.cartArray,
                     status:'pending',
-                    totalSum:this.props.sum,
+                    totalSum:this.props.cartSum,
                     userId:this.props.currentUser.id
                 }],
             where:'orders'
@@ -32,7 +36,9 @@ class CartContainer extends React.Component {
     };
 
     render() {
-        console.log(this.props.cartArray)
+        localStorage.setItem('cartArray',JSON.stringify(this.props.cartArray));
+        localStorage.setItem('cartSum',JSON.stringify(this.props.cartSum));
+        localStorage.setItem('counter',JSON.stringify(this.props.counter));
         return (
             <div className='cart'>
                 <h3 className='cart__sum'>Sum:{this.props.cartSum}</h3>
@@ -44,9 +50,7 @@ class CartContainer extends React.Component {
                             product={el}
                             group={el.group}
                             dataServices={this.props.dataServices}
-                            more={this.props.more}
-                            less={this.props.less}
-                            deleteP={this.props.deleteP}
+
                             change={this.changeCartProduct}/>
                     ))}
                 </div>
@@ -61,10 +65,9 @@ const mapStateToProps = state => {
         cartArray: state.app.cartArray,
         cartSum: state.app.cartSum,
         dataServices: state.app.dataServices,
-        showCart:state.app.showCart,
         dataOrders: state.app.dataOrders,
-        sum:state.app.cartSum,
-        currentUser:state.auth.currentUser
+        currentUser:state.auth.currentUser,
+        counter:state.app.counter
     }
 };
 

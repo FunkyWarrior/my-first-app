@@ -110,7 +110,7 @@
           "id": 1,
           "group": "pesiki",
           "servicePhoto": "/img/pesiki/pesik1.jpg",
-          "bodyShort": "Удивленный котик",
+          "bodyShort": "Песик 1",
           "bodyLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, magnam. Maxime nisi dolorum consectetur dolor impedit veniam placeat nobis repudiandae quibusdam aperiam! Dolor inventore modi corporis doloribus quos doloremque, esse sint. Dignissimos, assumenda, unde officiis recusandae blanditiis nihil totam tempora fuga, maxime, architecto quidem provident consequuntur alias expedita sint sunt.",
           "price": 500
         },
@@ -118,7 +118,7 @@
           "id": 2,
           "group": "pesiki",
           "servicePhoto": "/img/pesiki/pesik2.jpg",
-          "bodyShort": "Котик Шаурма",
+          "bodyShort": "Резиновый песик",
           "bodyLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia architecto eveniet eos a amet, porro, perferendis nulla placeat quia, quaerat, ab quam qui deserunt dolor aperiam natus cum veritatis? Velit facilis porro reiciendis sequi maiores, voluptas, blanditiis a fugit doloremque minima ipsam dolorem architecto error incidunt aliquid alias eum veritatis?",
           "price": 1000
         },
@@ -134,7 +134,7 @@
           "id": 4,
           "group": "pesiki",
           "servicePhoto": "/img/pesiki/pesik4.jpg",
-          "bodyShort": "Грустный котик",
+          "bodyShort": "Кислотный песик",
           "bodyLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga libero maiores explicabo cupiditate voluptas, ut laudantium reprehenderit adipisci eveniet quo. Odit, quasi. Minus inventore culpa numquam sit reiciendis quod perferendis et, dolores quis architecto eligendi quo praesentium laudantium hic, asperiores minima aut accusantium odio explicabo sunt quasi. Voluptate, corporis, commodi.",
           "price": 1000
         },
@@ -142,7 +142,7 @@
           "id": 5,
           "group": "pesiki",
           "servicePhoto": "/img/pesiki/pesik5.jpg",
-          "bodyShort": "Котик на хлебушке",
+          "bodyShort": "Мопсик",
           "bodyLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ratione, laudantium. Molestias dolor iusto rem, voluptates dolores provident, natus alias ducimus nesciunt optio cumque suscipit laborum accusamus sequi! Eum aliquid quibusdam accusantium ex qui incidunt veniam, placeat accusamus doloribus ad, quas delectus minima ratione fugiat modi praesentium non dignissimos iste!",
           "price": 500
         },
@@ -150,7 +150,7 @@
           "id": 6,
           "group": "pesiki",
           "servicePhoto": "/img/pesiki/pesik6.jpg",
-          "bodyShort": "Большеглазый котик на черном фоне",
+          "bodyShort": "Хммм...",
           "bodyLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum magnam esse voluptatum, maxime ipsam quaerat labore harum, in. Perspiciatis nam omnis magnam. Earum tempora at aperiam eius quae praesentium quas, ipsum aspernatur labore, modi eum consequatur quia eveniet doloremque odit! Illum saepe, corporis alias officiis cumque sapiente, maxime quam.",
           "price": 500
         },
@@ -158,7 +158,7 @@
           "id": 7,
           "group": "pesiki",
           "servicePhoto": "/img/pesiki/pesik7.jpg",
-          "bodyShort": "Чеширский котик",
+          "bodyShort": "Два песика по цене трех",
           "bodyLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eos, neque repudiandae, ab sapiente iusto ipsam facilis? Suscipit perferendis quo, delectus repellendus, iure culpa quam vel, quasi eos voluptatibus quos eius maxime, at distinctio! Repellat fuga quam tempora ipsa, vero molestiae, omnis in cupiditate, quidem sunt deleniti incidunt deserunt ullam.",
           "price": 500
         },

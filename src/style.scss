@@ -20,6 +20,29 @@ body {
     opacity: 0.8;
     z-index: 4;
 }
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #5075e6;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    height: 200px;
+    width: 500px;
+    margin: -100px -250px;
+    border-radius: 10px;
+    z-index: 10;
+
+    &__text {
+        color: #ff735d;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+}
 //--------------------------------------------------------------------------------------------------------------------
 
 .header {
@@ -89,9 +112,9 @@ body {
         position: relative;
     }
 
-    #products:hover  &__drop-products{
-        height: 200%;
-    }
+    //#products:hover  &__drop-products{
+    //    height: 200%;
+    //}
 
 
 
@@ -244,17 +267,19 @@ body {
         margin: 5px;
         border-radius: 10px;
         cursor: pointer;
+        max-height: 40px;
+
     }
 
     &__list {
-        height: 0;
+        height: 100%;
         overflow: hidden;
     }
 
-    &__item:hover &__list {
-        height: 100%;
-
-    }
+    //&__item:hover &__list {
+    //    height: 100%;
+    //
+    //}
 
     &__inner,&__info{
         display: flex;
@@ -335,10 +360,10 @@ body {
     top: 50%;
     left: 50%;
     width: 300px;
-    height: 500px;
+    height: 300px;
     z-index: 5;
     background-color: darkkhaki;
-    margin: -250px -150px;
+    margin: -150px -150px;
     border-radius: 10px;
     &__title{
         background-color: red;
@@ -355,7 +380,8 @@ body {
         margin-top: 10px;
     }
     &__submit {
-        margin-top: 40px;
+        height: 30px;
+        margin-top: 25px;
     }
 }
 
@@ -499,6 +525,7 @@ body {
             text-align: center;
         }
         &__user-form {
+            margin-left: 0;
             display: flex;
             justify-content: space-around;
             width: 100%;

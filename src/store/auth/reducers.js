@@ -1,9 +1,11 @@
 import {
     CHANGE_INPUT_VALUE_LOG,
     CHANGE_INPUT_VALUE_REG,
+    CHANGE_INPUT_VALUE_USER,
 
     USER_AUTHORIZATION,
     USER_REGISTRATION,
+    USER_INFO_CHANGE,
 
     GET_REQUEST,
     GET_REQUEST_SUCCESS,
@@ -13,10 +15,8 @@ import {
     PUT_REQUEST_SUCCESS,
     PUT_REQUEST_FAIL,
 
-    // CHANGE_SHOW_USER_FORM_FLAG,
-    CHANGE_SHOW_SHADOW_FLAG,
-    CHANGE_SHOW_AUTH_FORM_FLAG,
-    CHANGE_SHOW_REG_FORM_FLAG,
+    AUTH_SET_DATA,
+    AUTH_CLEAR_DATA
 
 
 } from './actions'
@@ -111,16 +111,95 @@ const formFieldsReg = [
     }
 ];
 
+const formFieldsChangeUser = [
+    {
+        id:1,
+        type:'text',
+        value:"",
+        name:'name',
+        placeholder:'Name *',
+        patter:"[a-zA-Zа-яёА-ЯЁ]{1,40}",
+        minLength:1,
+        maxLength:20
+    },
+    {
+        id:2,
+        type:'text',
+        value:"",
+        name:'lastName',
+        placeholder:'Last Name',
+        patter:"[a-zA-Zа-яёА-ЯЁ]{1,40}",
+        minLength:1,
+        maxLength:20,
+    },
+    {
+        id:3,
+        type:'email',
+        value:"",
+        name:'email',
+        placeholder:'E-Mail *'
+    },
+    {
+        id:4,
+        type:'tel',
+        value:"",
+        name:'phone',
+        title:'380xxxxxxxxx',
+        placeholder:'Phone: 380xxxxxxxxx',
+        pattern:"380[0-9]{9}"
+    },
+    {
+        id:5,
+        type:'text',
+        value:"",
+        name:'avatarUrl',
+        placeholder:'Avatar URL'
+    },
+    {
+        id:6,
+        type:'password',
+        value:"",
+        name:'password',
+        placeholder:'Password *',
+        minLength:6,
+        maxLength:25,
+        required:true
+    },
+    {
+        id:7,
+        type:'password',
+        value:"",
+        name:'password',
+        placeholder:'Repeat Password *',
+        minLength:6,
+        maxLength:25,
+        required:true
+    }
+];
+
 const defaultState = {
-    dataUsers:[],
+    dataUsers:[{
+        name: '',
+        lastName: '',
+        email: '',
+        phone: 0,
+        avatarUrl:'',
+        password: 0,
+        root: false,
+        id: 0
+    }],
     authForm : formFieldsLog,
     regForm: formFieldsReg,
-    currentUser:{
+    changeForm: formFieldsChangeUser,
+    currentUser:localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) :
+        {
         id:0,
         email:'',
         root:false
     },
-    showUserForm:false,
+    alert:null,
+    showUserForm:localStorage.getItem('currentUser'),
+    showChangeUser:false,
     showShadow:false,
     showAuthForm:false,
     showRegForm:false,
@@ -133,6 +212,41 @@ const defaultState = {
 export const authReducer = (state = defaultState,action) => {
     // eslint-disable-next-line default-case
     switch (action.type) {
+
+// -----------------------------------------------------------------------------------------------------------------
+        case AUTH_SET_DATA : {
+
+            return {
+                ...state,
+                [action.payload.path]:action.payload.data
+            }
+        }
+
+        case AUTH_CLEAR_DATA : {
+            return {
+                ...state,
+                authForm : formFieldsLog,
+                regForm: formFieldsReg,
+                changeForm: state.changeForm.map(el => el ? {
+                    ...el,
+                        value:''
+                } : el),
+                currentUser:{
+                    id:0,
+                    email:'',
+                    root:false
+                },
+                alert:null,
+                showUserForm:false,
+                showShadow:false,
+                showAuthForm:false,
+                showRegForm:false,
+                isFetching:false,
+                error:null
+            }
+        }
+// -----------------------------------------------------------------------------------------------------------------
+
         case CHANGE_INPUT_VALUE_LOG :
             return {
                 ...state,
@@ -150,6 +264,16 @@ export const authReducer = (state = defaultState,action) => {
                     value:action.payload.target.value
                 } : el)
             };
+
+        case CHANGE_INPUT_VALUE_USER :
+            return {
+                ...state,
+                changeForm: state.changeForm.map(el => el.id === +action.payload.target.id ? {
+                    ...el,
+                    value:action.payload.target.value
+                } : el)
+            };
+
 // -----------------------------------------------------------------------------------------------------------------
 
         case GET_REQUEST : {
@@ -171,6 +295,7 @@ export const authReducer = (state = defaultState,action) => {
                 isFetching: false
             }
         }
+
 // -----------------------------------------------------------------------------------------------------------------
 
         case PUT_REQUEST: {
@@ -180,10 +305,11 @@ export const authReducer = (state = defaultState,action) => {
         case PUT_REQUEST_SUCCESS: {
             return {
                 ...state,
-                dataUsers: state.dataUsers.concat(state.currentUser),
-                showUserForm:!state.showUserForm,
-                showShadow:!state.showShadow,
-                showRegForm:!state.showRegForm,
+                dataUsers: action.payload,
+                showChangeUser:false,
+
+                showShadow:false,
+                showRegForm:false,
                 isFetching: false,
             }
         }
@@ -199,6 +325,7 @@ export const authReducer = (state = defaultState,action) => {
                 }
             }
         }
+
 // -----------------------------------------------------------------------------------------------------------------
 
         case USER_AUTHORIZATION : {
@@ -210,30 +337,40 @@ export const authReducer = (state = defaultState,action) => {
                         currentUser:user,
                         showUserForm:!state.showUserForm,
                         showShadow:!state.showShadow,
-                        showAuthForm:!state.showAuthForm
+                        showAuthForm:!state.showAuthForm,
+                        authForm : formFieldsLog,
+
                     }
-                }else alert('Password doesnt match')
-            }else alert('Email doesnt match');
-            return state
+                }else return {
+                    ...state,
+                    alert:'Password doesnt match'
+                }
+            }else return {
+                ...state,
+                alert:'Email doesnt found'
+            }
         }
 
 // -----------------------------------------------------------------------------------------------------------------
 
         case USER_REGISTRATION : {
             let some = true;
-            // eslint-disable-next-line array-callback-return
-            state.dataUsers.map(user => {
-                if(user.email === state.regForm[2].value){
-                    alert('Email already taken');
-                    some = false;
-                    return state
+            if (state.dataUsers.find(user => user.email === state.regForm[2].value)){
+                console.log(state.dataUsers,state.regForm[2].value);
+                some = false;
+                return {
+                    ...state,
+                    alert:'Email already taken'
                 }
-            });
+            }
+
             if(some){
                if(!(state.regForm[5].value === state.regForm[6].value)){
-                   alert('Passwords doesnt match');
                    some = false;
-                   return state
+                   return {
+                       ...state,
+                       alert:'Passwords doesnt match'
+                   }
                }
             }
             if (some) {
@@ -251,39 +388,63 @@ export const authReducer = (state = defaultState,action) => {
                 action.payload([...state.dataUsers,user]);
                 return {
                     ...state,
-                    currentUser:user
+                    currentUser:user,
+                    regForm: formFieldsReg,
                 }
             }
             return state
         }
+
 // -----------------------------------------------------------------------------------------------------------------
 
-        // case CHANGE_SHOW_USER_FORM_FLAG : {
-        //     return {
-        //         ...state,
-        //         showUserForm:!state.showUserForm
-        //     }
-        // }
-        case CHANGE_SHOW_REG_FORM_FLAG : {
-            return {
-                ...state,
-                showRegForm:!state.showRegForm
+        case USER_INFO_CHANGE : {
+            const changedDataUsers = state.dataUsers.slice()
+
+            let some = true;
+            if (state.dataUsers.find(user => user.email === state.regForm[2].value)){
+                some = false;
+                return {
+                    ...state,
+                    alert:'Email already taken'
+                }
             }
+            if(some){
+                if(!(state.changeForm[5].value === state.changeForm[6].value)){
+                    some = false;
+                    return {
+                        ...state,
+                        alert:'Passwords doesnt match'
+                    }
+                }
+            }
+            if(some){
+                action.payload(changedDataUsers.map(el => el.id === state.currentUser.id ? {
+                    ...el,
+                    name:`${state.changeForm[0].value}`,
+                    lastName:`${state.changeForm[1].value}`,
+                    email:`${state.changeForm[2].value}`,
+                    phone:`${state.changeForm[3].value}`,
+                    avatarUrl:`${state.changeForm[4].value}`,
+                    password:`${state.changeForm[5].value}`,
+                    root:false,
+                } : el));
+                return {
+                    ...state,
+                    currentUser:{...state.currentUser,
+                        name:`${state.changeForm[0].value}`,
+                        lastName:`${state.changeForm[1].value}`,
+                        email:`${state.changeForm[2].value}`,
+                        phone:`${state.changeForm[3].value}`,
+                        avatarUrl:`${state.changeForm[4].value}`,
+                        password:`${state.changeForm[5].value}`,
+                        root:false,
+                    },
+                    changeForm: formFieldsChangeUser,
+                }
+            }
+            return state
         }
 
-        case CHANGE_SHOW_SHADOW_FLAG : {
-            return {
-                ...state,
-                showShadow:!state.showShadow
-            }
-        }
-
-        case CHANGE_SHOW_AUTH_FORM_FLAG : {
-            return {
-                ...state,
-                showAuthForm:!state.showAuthForm
-            }
-        }
 
         default:
             return state
