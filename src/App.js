@@ -255,6 +255,7 @@ export class App extends React.Component {
     };
 
      render () {
+         console.log('hi')
           return (
             <>
                 <Header handler1={this.showLog} handler2={this.showReg} show={this.state.showUserForm} user={this.props.app.currentUser} />
